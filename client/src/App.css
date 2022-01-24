@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.listOfFriends {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.friendContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.friend {
+  width: 400px;
+  height: 60px;
+  display: flex;
+}
