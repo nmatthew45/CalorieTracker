@@ -4,10 +4,10 @@ Full stack application that allows the user to maintain a list of friends and ad
 
 How to run:
 1. Clone this repository
-2. cd FriendsList 
-3. Install node packages using: npm i
-4. cd FriendsList/client
-5. npm start
-6. cd FriendsList/server
-7. nodemon index.js
-8. Interact with application at: http://localhost:3000
+2. cd FriendsList/client
+3. npm i
+4. npm start
+7. cd FriendsList/server
+8. npm i
+9. nodemon index.js
+11. Interact with application at: http://localhost:3000
