@@ -5,7 +5,7 @@ Full stack application that allows the user to maintain a list of friends and ad
 How to run:
 1. Clone this repository
 2. cd FriendsList 
-3. Install node modules using: npm i
+3. Install node packages using: npm i
 4. cd FriendsList/client
 5. npm start
 6. cd FriendsList/server
