@@ -9,7 +9,7 @@ function App() {
 
   // CREATE
   const addFriend = () => {
-    Axios.post("https://friendslist-mnguyen.herokuapp.com//addfriend", {
+    Axios.post("https://friendslist-mnguyen.herokuapp.com/addfriend", {
       name: name,
       note: note,
     }).then((response) =>
@@ -22,7 +22,7 @@ function App() {
 
   // READ
   useEffect(() => {
-    Axios.get("https://friendslist-mnguyen.herokuapp.com//viewfriends")
+    Axios.get("https://friendslist-mnguyen.herokuapp.com/viewfriends")
       .then((response) => {
         setListOfFriends(response.data);
       })
@@ -34,7 +34,7 @@ function App() {
   // UPDATE
   const updateFriend = (id) => {
     const newNote = prompt("Enter new note: ");
-    Axios.put("https://friendslist-mnguyen.herokuapp.com//update", {
+    Axios.put("https://friendslist-mnguyen.herokuapp.com/update", {
       newNote: newNote,
       id: id,
     }).then(() => {
@@ -50,7 +50,7 @@ function App() {
 
   // DELETE
   const deleteFriend = (id) => {
-    Axios.delete(`https://friendslist-mnguyen.herokuapp.com//delete/${id}`).then(() => {
+    Axios.delete(`https://friendslist-mnguyen.herokuapp.com/delete/${id}`).then(() => {
       setListOfFriends(
         listOfFriends.filter((val) => {
           return val._id !== id;
