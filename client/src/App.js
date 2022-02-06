@@ -61,8 +61,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Friend List</h1>
       <div className="inputs">
+        <h1 className="titleHeader">Friends List</h1>
         <input
           type="text"
           placeholder="Name"
@@ -75,7 +75,6 @@ function App() {
         ></input>
         <button onClick={addFriend}>Add Friend</button>
       </div>
-
       <div className="listOfFriends">
         {listOfFriends.map((val) => {
           return (
