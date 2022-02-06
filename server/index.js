@@ -3,11 +3,13 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const FriendModel = require("./models/Friends");
 const app = express();
+require("dotenv").config();
+
 app.use(cors());
 app.use(express.json());
 
 mongoose.connect(
-  "mongodb+srv://mern:mongodb@cluster0.ttonn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+  "mongodb+srv://mern:mongodb@cluster0.ttonn.mongodb.net/friendslist?retryWrites=true&w=majority"
 );
 
 // CREATE
@@ -53,6 +55,6 @@ app.delete("/delete/:id", async (req, res) => {
 });
 
 // Start Server
-app.listen(3001, () => {
-  console.log("Successfully started on port 3001");
+app.listen(process.env.PORT || 3001, () => {
+  console.log("Successfully started");
 });
